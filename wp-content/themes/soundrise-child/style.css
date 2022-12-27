@@ -19,6 +19,10 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+body {
+	background-color: #000 !important;
+}
+
 .footer-wrapper-backtotop {
 	background: #ffe300 !important;
 }
@@ -28,7 +32,7 @@
 .continuousPlayer .control rect,
 .continuousPlayer .control path,
 .continuousPlayer .control polygon {
-	fill: #ffe300 !important;
+	fill: #ffffff !important;
 }
 
 section.content-box .entry div {
@@ -84,6 +88,112 @@ a#back-to-top i.fa-chevron-up {
 
 .sr_it-grid article button {
 	margin-top: 20px !important;
+	font-family: Quicksand;
+	font-weight: 400;
+	letter-spacing: 2px;
+	border: 2px solid #fff !important;
+}
+
+.sr_it-grid article button:hover {
+	-webkit-box-shadow: 0 0 0 rgb(255 255 255 / 0%) !important;
+	box-shadow: 0 0 0 rgb(255 255 255 / 0%) !important;
+	background: #ffe300 !important;
+	color: #000 !important;
+	border: 2px solid #ffe300 !important;
+}
+
+.vc_tta-color-orange.vc_tta-style-flat .vc_tta-tab.vc_active>a,
+.vc_tta-color-orange.vc_tta-style-modern .vc_tta-tab>a:focus,
+.vc_tta-color-orange.vc_tta-style-modern .vc_tta-tab>a:hover,
+.vc_tta-color-orange.vc_tta-style-modern .vc_tta-tab.vc_active>a {
+	background-color: #ffe300 !important;
+	color: #000 !important;
+	border: 1px solid #ffe300 !important;
+}
+
+.vc_tta-color-orange.vc_tta-style-flat .vc_tta-tab>a,
+.vc_tta-color-orange.vc_tta-style-modern .vc_tta-tab>a {
+	background-color: #000000 !important;
+	color: #fff !important;
+	border: 1px solid #ffffff !important;
+	letter-spacing: 2px;
+	border-radius: 0 !important;
+	background-image: none !important;
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-panel-body,
+.vc_tta.vc_tta-style-modern .vc_tta-panel-heading {
+	background-image: none !important;
+}
+
+.playlist .sr_it-playlist-title,
+.sr_it-playlist-artists,
+.sr_it-playlist-release-date {
+	color: #ffffff !important;
+}
+
+.ctnButton-block div {
+	font-size: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.iron_widget_radio .store-list .button {
+	padding: 7px 13px 7px 13px !important;
+	border-radius: 0px !important;
+	background-color: #000 !important;
+	border: 1px solid #fff !important;
+	font-size: 15px !important;
+}
+
+.iron-audioplayer .playlist li a.button {
+	background: #ffe300 !important;
+	color: #000;
+	letter-spacing: 2px !important;
+	border-radius: 0px !important;
+	padding: 5px 12px;
+	border: 1px solid #ffe300;
+}
+
+.single-album .iron-audioplayer .playlist li a.button {
+	padding: 0px 12px;
+}
+
+.store-list a.button:hover {
+	color: #000 !important;
+	border: 1px solid #ffe300 !important;
+}
+
+.single-album .info-section h2 {
+	font-size: 70px !important;
+}
+
+.continuousPlayer.enable {
+	background: #141414 !important;
+	border-top: 1px solid #242424 !important;
+}
+
+.continuousPlayer.enable .metadata {
+	margin-top: 7px;
+}
+
+.iron-audioplayer .playlist li {
+	margin: 20px 0 !important;
+}
+
+.continuousPlayer .track-name {
+	color: #ffe300 !important;
+	line-height: 18px !important;
+	margin-bottom: 5px;
+}
+
+.continuousPlayer .album-title {
+	color: #ffffff !important;
+}
+
+.iron-audioplayer .playlist li a.button:hover {
+	background: #000 !important;
+	color: #fff;
+	border: 1px solid #fff;
 }
 
 .sr_it-grid article header {
