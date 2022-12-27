@@ -19,16 +19,111 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-body {
+body,
+#wrapper {
+	background: #000 !important;
 	background-color: #000 !important;
+}
+
+.single-artist h1 {
+	margin-bottom: 20px;
+}
+
+.wpb_content_element a {
+	color: #b7a622 !important;
+	text-decoration: underline !important;
+	font-style: italic !important;
+}
+
+
+.artist_contact.sr_it-meta h4 {
+	font-size: 33px !important;
+	font-family: Poppins !important;
+	font-weight: 500 !important;
+	line-height: 30px !important;
+}
+
+.artist_contact.sr_it-meta p a {
+	color: #ffe300 !important;
+	text-decoration: underline !important;
+	text-transform: capitalize !important;
+}
+
+.artist_contact.sr_it-meta p strong {
+	display: none !important
+}
+
+.vc_tta.vc_tta-controls-align-center .vc_tta-tabs-container {
+	text-align: left !important;
+}
+
+.site-logo.righttype {
+	top: 0 !important;
+	margin-top: 31px !important;
 }
 
 .footer-wrapper-backtotop {
 	background: #ffe300 !important;
 }
 
+.opacityzero {
+	position: fixed !important;
+	z-index: 100000000 !important;
+}
+
+.site-logo.righttype {
+	left: 0px !important;
+}
+
+.site-logo.righttype,
+.site-logo.lefttype {
+	top: 10px !important;
+}
+
+.woocommerce img,
+.woocommerce-page img {
+	height: auto;
+	max-width: 350px !important;
+}
+
+ul.header-top-menu.righttype {
+	right: 0px !important;
+	padding: 28px 70px 32px 0 !important;
+	margin: 0px auto !important;
+	background: #000 !important;
+	text-align: right !important;
+	width: 100% !important;
+}
+
+ul.header-top-menu.righttype li:nth-last-child() {
+	margin-right: 14px !important;
+}
+
+.nav-menu li a.backbtn {
+	color: #000 !important;
+	background: white !important;
+	width: 100px !important;
+	margin: 0 auto !important;
+	border-radius: 60px !important;
+	font-weight: bold !important;
+	border: 2px solid #fff;
+}
+
+.nav-menu li a.backbtn:hover {
+	background: #ffe300 !important;
+	border: 2px solid #000;
+}
+
+.side-menu .social-networks a i {
+	color: #000 !important;
+}
+
+
 .iron-audioplayer .playlist .track-number svg path,
-.iron-audioplayer .playlist .track-number svg rect,
+.iron-audioplayer .playlist .track-number svg rect {
+	fill: #ffe300 !important;
+}
+
 .continuousPlayer .control rect,
 .continuousPlayer .control path,
 .continuousPlayer .control polygon {
@@ -204,6 +299,49 @@ h1.sr_it-item-title {
 	line-height: 35px !important;
 }
 
+.woocommerce div#page-banner {
+	display: none !important;
+}
+
+.woocommerce h2,
+.sr_it-single-post h2 {
+	line-height: 25px !important;
+}
+
+.woocommerce a.button,
+.woocommerce-page a.button {
+	border-color: #ffe300 !important;
+	color: #000 !important;
+}
+
+span.woocommerce-Price-currencySymbol {
+	font-size: 20px;
+}
+
+div#tab-additional_information,
+.eael-star-rating.star-rating {
+	display: none !important;
+}
+
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt.disabled:hover {
+	background-color: #000 !important;
+	border: 1px solid #fff !important;
+	color: #fff !important;
+}
+
+.woocommerce button.button.alt {
+	background-color: #ffe300 !important;
+	border: 1px solid #ffe300 !important;
+	color: #000 !important;
+}
+
+.woocommerce button.button.alt:hover {
+	background-color: #000 !important;
+	border: 1px solid #fff !important;
+	color: #fff !important;
+}
+
 .store-list a.button:hover,
 .panel-action:hover,
 .album-overlay,
@@ -312,4 +450,70 @@ ins,
 .woocommerce span.onsale,
 .woocommerce-page span.onsale {
 	background-color: #ffe300 !important;
+}
+
+.woocommerce a.button:hover,
+.woocommerce-page a.button:hover {
+	border-color: #fff !important;
+	color: #fff !important;
+	background: #000 !important;
+	background-color: #000 !important;
+}
+
+
+@media only screen and (max-width: 1179px) {}
+
+@media only screen and (max-width: 1143px) {
+
+	.logo-desktop {
+		max-width: 220px !important;
+		max-height: 112px !important;
+	}
+
+	.woocommerce img,
+	.woocommerce-page img {
+		height: auto;
+		max-width: 220px !important;
+	}
+
+	.site-logo.righttype,
+	.site-logo.lefttype {
+		top: 10px !important;
+	}
+
+	ul.header-top-menu.righttype {
+		right: 0px !important;
+		padding: 17px 70px 17px 0 !important;
+	}
+
+	.menu-toggle {
+		top: 49px !important;
+	}
+
+	ul.header-top-menu.righttype li {
+		margin: 0 14px !important;
+	}
+
+	ul.header-top-menu.righttype li:nth-last-child() {
+		margin-right: 14px !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.iron-audioplayer.show-playlist .buttons-block {
+		margin-left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.opacityzero {
+		position: fixed !important;
+		z-index: 30 !important;
+		background: #000 !important;
+		height: 67px !important;
+	}
+
+	li.menu-item:hover a {
+		background: black !important;
+	}
 }
