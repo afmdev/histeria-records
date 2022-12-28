@@ -50,7 +50,11 @@ body,
 }
 
 .artist_contact.sr_it-meta p strong {
-	display: none !important
+	display: none !important;
+}
+
+.woocommerce div.product form.cart .variations th {
+	text-align: left;
 }
 
 .vc_tta.vc_tta-controls-align-center .vc_tta-tabs-container {
@@ -80,8 +84,7 @@ body,
 	top: 10px !important;
 }
 
-.woocommerce img,
-.woocommerce-page img {
+a.site-logo.righttype img {
 	height: auto;
 	max-width: 350px !important;
 }
@@ -303,8 +306,7 @@ h1.sr_it-item-title {
 	display: none !important;
 }
 
-.woocommerce h2,
-.sr_it-single-post h2 {
+.woocommerce h2 {
 	line-height: 25px !important;
 }
 
@@ -316,7 +318,7 @@ h1.sr_it-item-title {
 	font-weight: 700;
 }
 
-span.woocommerce-Price-currencySymbol {
+.single-product span.woocommerce-Price-currencySymbol {
 	font-size: 20px;
 }
 
@@ -333,6 +335,9 @@ div#tab-additional_information,
 	font-family: Quicksand !important;
 }
 
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce a.button,
 .coupon button.button.wp-element-button,
 .woocommerce-page input.button,
 .woocommerce-page button.button.alt,
@@ -346,7 +351,10 @@ div#tab-additional_information,
 	font-family: Quicksand !important;
 }
 
-
+.woocommerce-page button.button:hover,
+.woocommerce button.button:disabled:hover,
+.woocommerce button.button:disabled[disabled]:hover,
+.woocommerce a.button:hover,
 .coupon button.button.wp-element-button:hover,
 .woocommerce-page input.button:hover,
 .woocommerce div.product form.cart .button:hover,
@@ -358,6 +366,77 @@ div#tab-additional_information,
 	border: 1px solid #fff !important;
 	color: #fff !important;
 	font-family: Quicksand !important;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+	height: 28px !important;
+	border-radius: 4px !important;
+	border: 0 !important;
+	padding-left: 9px !important;
+	font-size: 18px !important;
+	font-family: 'Quicksand' !important;
+}
+
+a.checkout-button.button.alt.wc-forward.wp-element-button {
+	background: #29cd29 !important;
+	color: white !important;
+	border: 1px solid #29cd29 !important;
+	border-radius: 4px !important;
+}
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+	background-color: #3e3e3e !important;
+}
+
+.woocommerce-checkout-payment li,
+.woocommerce-checkout-payment p {
+	color: #fff !important;
+}
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+	content: "";
+	display: block;
+	border: 1em solid #3e3e3e;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	position: absolute;
+	top: -0.75em;
+	left: 0;
+	margin: -1em 0 0 2em;
+}
+
+.woocommerce-info::before,
+a.showcoupon {
+	color: #ffe300 !important;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+
+p.cart-empty.woocommerce-info::before {
+	display: none;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+	background: #222222 !important;
+}
+
+a.checkout-button.button.alt.wc-forward.wp-element-button:hover {
+	background: #000 !important;
+	color: white !important;
+	border: 1px solid #fff !important;
+}
+
+a.shipping-calculator-button:hover {
+	color: #000 !important;
 }
 
 .woocommerce-message {
@@ -393,10 +472,16 @@ tr.woocommerce-cart-form__cart-item.cart_item .product-thumbnail img {
 	font-weight: 100;
 }
 
+.single-product .page-title h1 {
+	text-align: left !important;
+	color: #ffffff !important;
+	font-family: 'Quicksand' !important;
+	font-weight: 900 !important;
+}
+
 .page-title h1,
 h1.page-title,
 .error404 h1 {
-	text-align: left !important;
 	color: #ffffff !important;
 	font-family: 'Quicksand' !important;
 	font-weight: 900 !important;
@@ -422,7 +507,6 @@ span.woocommerce-Price-amount.amount {
 aside#sidebar {
 	background: #141414 !important;
 	padding: 20px 0px 0px 0 !important;
-	border-radius: 30px !important;
 }
 
 #sidebar .iron-audioplayer .player {
@@ -434,6 +518,87 @@ aside#sidebar {
 
 .textwidget.custom-html-widget .panel-networks ul li a i {
 	padding: 6px !important;
+	color: #fff !important
+}
+
+.textwidget.custom-html-widget .panel-networks ul li a i:hover {
+	color: #ffe300 !important;
+}
+
+.booking-btn {
+	background: #ffe300;
+	border: 1px solid #ffe300;
+	margin: 0 auto;
+	width: 90%;
+	border-radius: 30px;
+	text-align: center !important;
+	padding: 10px 0px;
+	-webkit-transition: background 0.35s ease, color 0.35s ease;
+	-o-transition: background 0.35s ease, color 0.35s ease;
+	transition: background 0.35s ease, color 0.35s ease;
+}
+
+.booking-btn:hover {
+	background: #000;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	width: 90%;
+	border-radius: 30px;
+	text-align: center !important;
+	padding: 10px 0px;
+}
+
+.booking-btn a {
+	display: block;
+	color: #000 !important;
+	font-weight: 900;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.booking-btn:hover a {
+	color: #fff !important;
+}
+
+aside#custom_html-2 h3 {
+	margin-bottom: 16px !important;
+}
+
+body.single-product ul.lista-productos {
+	margin: 14px 0px 20px !important;
+	list-style-type: none;
+	padding-left: 0px !important;
+}
+
+body.single-product ul.lista-productos li {
+	background: url(https://www.absolutaloe.com/wp-content/uploads/bio-sprite.png) no-repeat;
+	padding: 0 0 0 20px;
+	background-position: -203px -91px;
+}
+
+ul.clearfix.payment-icons li {
+	margin-top: -21px !important;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+	margin-top: -10px;
+}
+
+.single-product .woocommerce-tabs {
+	padding-top: 0 !important;
+}
+
+.woocommerce div.product form.cart .variations {
+	margin-bottom: 10px !important;
+}
+
+.pf-product-size-guide__tab.pf-product-size-guide__tab--active {
+	border: solid 1px #a9a9a9 !important;
+	color: black !important;
+}
+
+li.pf-size-guide-modal-size-chart__tab {
+	color: black !important;
 }
 
 .store-list a.button:hover,
@@ -544,6 +709,39 @@ ins,
 
 }
 
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce a.button,
+.coupon button.button.wp-element-button,
+.woocommerce-page input.button,
+.woocommerce-page button.button.alt,
+.woocommerce button.button.alt,
+.woocommerce button.button,
+.woocommerce-page button.button {
+	background-color: #ffe300 !important;
+	border: 1px solid #ffe300 !important;
+	color: #000 !important;
+	font-size: 18px !important;
+	font-family: Quicksand !important;
+}
+
+.woocommerce-page button.button:hover,
+.woocommerce button.button:disabled:hover,
+.woocommerce button.button:disabled[disabled]:hover,
+.woocommerce a.button:hover,
+.coupon button.button.wp-element-button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce div.product form.cart .button:hover,
+.woocommerce-page button.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button:hover,
+.woocommerce-page button.button:hover {
+	background-color: #000000 !important;
+	border: 1px solid #fff !important;
+	color: #fff !important;
+	font-family: Quicksand !important;
+}
+
 .woocommerce a.button:hover,
 .woocommerce-page a.button:hover {
 	border-color: #fff !important;
@@ -552,6 +750,122 @@ ins,
 	background-color: #000 !important;
 }
 
+
+.paypal-choose-card {
+	padding: 1.25rem 0 0;
+	margin-top: 30px;
+	border: 1px solid #dedcdb;
+	border-radius: 0.1875rem;
+	position: relative;
+	top: 80px;
+	margin-bottom: 80px;
+	width: 80%;
+}
+
+.paypal-choose-card .logo-paypal {
+	position: absolute;
+	top: -0.75rem;
+	left: 1.875rem;
+	height: 1.25rem;
+	width: auto;
+	display: inline-block;
+	background: #000000;
+	box-shadow: 0 0 0 0.625rem #000000;
+	color: #a6a6a6;
+}
+
+body.single-product ul.clearfix.payment-icons {
+	margin: 0 0 11px !important;
+	list-style-type: none;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.paypal-choose-card ul {
+	text-align: center;
+}
+
+.container:before,
+ul.clearfix:before {
+	content: " ";
+	display: table;
+}
+
+.paypal-choose-card li {
+	display: inline-block;
+	margin: 0 0.12rem 0 0;
+}
+
+body.single-product ul.payment-icons div,
+.footer-sprite,
+.home-icons,
+.bio-sprite,
+.home-icons {
+	background: url(https://www.absolutaloe.com/wp-content/uploads/bio-sprite.png) no-repeat;
+}
+
+body.single-product ul.payment-icons .sprite-ssl {
+	width: 81px;
+	height: 31px;
+	background-position: 0 -475px;
+}
+
+body.single-product ul.payment-icons .sprite-visa {
+	width: 53px;
+	height: 35px;
+	background-position: 0 0;
+}
+
+body.single-product ul.payment-icons .sprite-mastercard {
+	width: 53px;
+	height: 35px;
+	background-position: -57px 0;
+}
+
+body.single-product ul.payment-icons .sprite-amex {
+	width: 53px;
+	height: 35px;
+	background-position: 0 -40px;
+}
+
+body.single-product ul.payment-icons .sprite-discover {
+	width: 53px;
+	height: 35px;
+	background-position: -171px 0;
+}
+
+body.single-product ul.payment-icons .sprite-diners {
+	width: 53px;
+	height: 35px;
+	background-position: -57px -40px;
+}
+
+body.single-product ul.payment-icons .sprite-paypal {
+	width: 53px;
+	height: 35px;
+	background-position: -114px -40px;
+}
+
+body.single-product ul.payment-icons .sprite-uberweisung {
+	width: 53px;
+	height: 35px;
+	background-position: -171px -40px;
+}
+
+.single_variation_wrap a {
+	color: #ffe300 !important;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.woocommerce ol.flex-control-nav.flex-control-thumbs li {
+	margin-top: 10px !important;
+}
+
+.single-product .page-title.rellax h1 {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
 
 @media only screen and (max-width: 1179px) {}
 
@@ -562,8 +876,7 @@ ins,
 		max-height: 112px !important;
 	}
 
-	.woocommerce img,
-	.woocommerce-page img {
+	a.site-logo.righttype img {
 		height: auto;
 		max-width: 220px !important;
 	}
