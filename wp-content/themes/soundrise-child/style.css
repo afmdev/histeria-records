@@ -312,6 +312,8 @@ h1.sr_it-item-title {
 .woocommerce-page a.button {
 	border-color: #ffe300 !important;
 	color: #000 !important;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 span.woocommerce-Price-currencySymbol {
@@ -328,18 +330,110 @@ div#tab-additional_information,
 	background-color: #000 !important;
 	border: 1px solid #fff !important;
 	color: #fff !important;
+	font-family: Quicksand !important;
 }
 
-.woocommerce button.button.alt {
+.coupon button.button.wp-element-button,
+.woocommerce-page input.button,
+.woocommerce-page button.button.alt,
+.woocommerce button.button.alt,
+.woocommerce button.button,
+.woocommerce-page button.button {
 	background-color: #ffe300 !important;
 	border: 1px solid #ffe300 !important;
 	color: #000 !important;
+	font-size: 18px !important;
+	font-family: Quicksand !important;
 }
 
-.woocommerce button.button.alt:hover {
-	background-color: #000 !important;
+
+.coupon button.button.wp-element-button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce div.product form.cart .button:hover,
+.woocommerce-page button.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button:hover,
+.woocommerce-page button.button:hover {
+	background-color: #000000 !important;
 	border: 1px solid #fff !important;
 	color: #fff !important;
+	font-family: Quicksand !important;
+}
+
+.woocommerce-message {
+	background: #383838 !important;
+	border: 0 !important;
+}
+
+tr.woocommerce-cart-form__cart-item.cart_item .product-thumbnail img {
+	width: 100px !important;
+}
+
+.cart_totals h2 {
+	font-size: 44px !important;
+}
+
+#sidebar .playlist h1 {
+	font-size: 22px !important;
+	line-height: 25px !important;
+	margin-bottom: 16px !important;
+	margin-top: 10px;
+}
+
+#sidebar .vc_col-md-6 {
+	width: 100% !important;
+}
+
+#sidebar h3.widget-title {
+	text-align: center;
+	font-size: 33px;
+	margin-bottom: 10px;
+	color: #ffe300;
+	font-family: 'Quicksand';
+	font-weight: 100;
+}
+
+.page-title h1,
+h1.page-title,
+.error404 h1 {
+	text-align: left !important;
+	color: #ffffff !important;
+	font-family: 'Quicksand' !important;
+	font-weight: 900 !important;
+}
+
+.woocommerce.single-product h2 {
+
+	color: #ffffff !important;
+	font-family: 'Quicksand' !important;
+	font-weight: 900 !important;
+}
+
+span.woocommerce-Price-amount.amount {
+	color: #ffe300 !important;
+	font-weight: 900 !important;
+}
+
+.summary.entry-summary,
+.summary.entry-summary p {
+	padding: 0 !important;
+}
+
+aside#sidebar {
+	background: #141414 !important;
+	padding: 20px 0px 0px 0 !important;
+	border-radius: 30px !important;
+}
+
+#sidebar .iron-audioplayer .player {
+	width: 100% !important;
+	height: 55px !important;
+	position: relative !important;
+	font-size: 12px !important;
+}
+
+.textwidget.custom-html-widget .panel-networks ul li a i {
+	padding: 6px !important;
 }
 
 .store-list a.button:hover,
@@ -408,9 +502,6 @@ a.back-btn:hover,
 .woocommerce input.button:hover,
 .woocommerce #respond input#submit:hover,
 .woocommerce #content input.button:hover,
-.woocommerce-page a.button:hover,
-.woocommerce-page button.button:hover,
-.woocommerce-page input.button:hover,
 .woocommerce-page #respond input#submit:hover,
 .woocommerce-page #content input.button:hover,
 .woocommerce a.button.alt:hover,
@@ -418,7 +509,6 @@ a.back-btn:hover,
 .woocommerce input.button.alt:hover,
 .woocommerce #respond input#submit.alt:hover,
 .woocommerce #content input.button.alt:hover,
-.woocommerce-page a.button.alt:hover,
 .woocommerce-page button.button.alt:hover,
 .woocommerce-page input.button.alt:hover,
 .woocommerce-page #respond input#submit.alt:hover,
@@ -450,6 +540,8 @@ ins,
 .woocommerce span.onsale,
 .woocommerce-page span.onsale {
 	background-color: #ffe300 !important;
+	font-family: Quicksand !important;
+
 }
 
 .woocommerce a.button:hover,
